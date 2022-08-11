@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+      <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container header">
+        <nav class="nav-header">
+          <a class="logo header__logo" href="./index.html" lang="en"><span class="slogan header__slogan">Web</span>Studio</a>
+          <ul class="nav-header__list">
+            <li class="nav-header__item"><a class="nav-header__link" href="./index.html">Студия</a></li>
+            <li class="nav-header__item"><a class="nav-header__link nav-header__link--current" href="./portfolio.html">Портфолио</a></li>
+            <li class="nav-header__item"><a class="nav-header__link" href="/Контакты">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="header-list">
+          <li class="header-list__item">
+            <a
+              class="header-list__link"
+              href="mailto:info@devstudio.com"
+              aria-label="Иконка конверта">
+              <svg class="header-list__icon" width="16" height="12">
+                <use href="./images/icons.svg#envelope"></use></svg>info@devstudio.com
+            </a>
+          </li>
+          <li class="header-list__item">
+            <a class="header-list__link" 
+            href="tel:+380961111111"
+            aria-label="Иконка смартфона">
+            <svg class="header-list__icon" width="10" height="16">
+                <use href="./images/icons.svg#smartphone"></use></svg>+38 096 111 11 11
+              </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="progect">
+        <div class="container">
+          <h1 class="progect-title visually-hidden">Портфолио</h1>
+          <ul class="progect-filtre progect__progect-filtre">
+            <li><button class="progect-filtre__btn" type="button">Все</button></li>
+            <li><button class="progect-filtre__btn" type="button">Веб-сайты</button></li>
+            <li><button class="progect-filtre__btn" type="button">Приложения</button></li>
+            <li><button class="progect-filtre__btn" type="button">Дизайн</button></li>
+            <li><button class="progect-filtre__btn" type="button">Маркетинг</button></li>
+          </ul>
+          <ul class="progect-list list">
+            <li class="progect-list__item">
+              <div class="progect-overlay">
+                <img
+                src="./images/portfolio/img1.jpg"
+                alt="Пример веб-страницы на ноутбуке"
+                width="370"
+                height="294"
+              /><p class="progect-overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+              </div>
+              <div class="progect-list__border">
+                <h3 class="progect-list__title">Технокряк</h3>
+                <p class="progect-list__text">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="progect-list__item">
+              <div class="progect-overlay">
+              <img
+                src="./images/portfolio/img2.jpg"
+                alt="Постер баскетбол Новый Орлеан против Золотых звезд"
+                width="370"
+                height="294"
+              /><p class="progect-overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+            </div>
+              <div class="progect-list__border">
+                <h3 class="progect-list__title" lang="en">Постер New Orlean vs Golden Star</h3>
+                <p class="progect-list__text">Дизайн</p>
+              </div>           
+            </li>
+            <li class="progect-list__item">
+              <div class="progect-overlay">
+              <img
+                src="./images/portfolio/img3.jpg"
+                alt="Эмблема рестрорана Морская еда"
+                width="370"
+                height="294"
+              /><p class="progect-overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+              </div>
+              <div class="progect-list__border">
+                <h3 class="progect-list__title">Ресторан Seafood</h3>
+                <p class="progect-list__text">Приложение</p>
+              </div>
+            </li>
+            <li class="progect-list__item">
+              <div class="progect-overlay">
+              <img
+                src="./images/portfolio/img4.jpg"
+                alt="Черные блу туз наушники"
+                width="370"
+                height="294"
+              /><p class="progect-overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+              </div>
+              <div class="progect-list__border">
+                <h3 class="progect-list__title">Проект Prime</h3>
+                <p class="progect-list__text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="progect-list__item">
+              <div class="progect-overlay">
+              <img
+                src="./images/portfolio/img5.jpg"
+                alt="Макет двух коробок белого и кирпичного цвета"
+                width="370"
+                height="294"
+              /><p class="progect-overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+              </div>
+              <div class="progect-list__border">
+                <h3 class="progect-list__title">Проект Boxes</h3>
+                <p class="progect-list__text">Приложение</p>
+              </div>
+            </li>
+            <li class="progect-list__item">
+              <div class="progect-overlay">
+              <img
+                src="./images/portfolio/img6.jpg"
+                alt="Пример веб-страницы на мониторе"
+                width="370"
+                height="294"
+              /><p class="progect-overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+              </div>
+              <div class="progect-list__border">
+                <h3 class="progect-list__title" lang="en">Inspiration has no Borders</h3>
+                <p class="progect-list__text">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="progect-list__item">
+              <div class="progect-overlay">
+              <img
+                src="./images/portfolio/img7.jpg"
+                alt="Страницы журнала Лимитед эдишион"
+                width="370"
+                height="294"
+              /><p class="progect-overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+              </div>
+              <div class="progect-list__border">
+                <h3 class="progect-list__title">Издание Limited Edition</h3>
+                <p class="progect-list__text">Дизайн</p>
+              </div>
+            </li>
+            <li class="progect-list__item">
+              <div class="progect-overlay">
+              <img
+                src="./images/portfolio/img8.jpg"
+                alt="Бирка с эмблемой Лаб"
+                width="370"
+                height="294"
+              /><p class="progect-overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+              </div>
+              <div class="progect-list__border">
+                <h3 class="progect-list__title">Проект LAB</h3>
+                <p class="progect-list__text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="progect-list__item">
+              <div class="progect-overlay">
+              <img
+                src="./images/portfolio/img9.jpg"
+                alt="Ноутбук с открытым приложением Гроувинг бизнес"
+                width="370"
+                height="294"
+              /><p class="progect-overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+              </div>
+              <div class="progect-list__border">
+                <h3 class="progect-list__title" lang="en">Growing Business</h3>
+                <p class="progect-list__text">Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+
+    <footer class="page-footer">
+      <div class="container main-footer">
+        <div class="footer-address main-footer__footer-address">
+          <a class="logo main-footer__logo" href="./index.html" lang="en"><span class="slogan main-footer__slogan">Web</span>Studio</a>
+          <address class="footer-address__all">г. Киев, пр-т Леси Украинки, 26</address>
+          <ul class="footer-address__list">
+            <li class="footer-address__item">
+              <a class="footer-address__link" href="mailto:info@devstudio.com">info@example.com</a>
+            </li>
+            <li class="footer-address__item">
+              <a class="footer-address__link" href="tel:+380961111111">+38 099 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social main-footer__footer-social">
+          <h3 class="footer-title main-footer__footer-title">Присоединяйтесь</h3>
+          <ul class="social-list">
+            <li class="social-list__item ">
+              <a
+                class="social-list__link social-list__link--footer"
+                href=""
+                target="_blank"
+                rel="no-opener no-referrer"
+                aria-label="Иконка инстаграма">
+                <svg class="social-list__icon" width="20" height="20">
+                  <use href="./images/icons.svg#instagram"></use></svg>
+                </a>
+            </li>
+            <li class="social-list__item">
+              <a
+                class="social-list__link social-list__link--footer"
+                href=""
+                target="_blank"
+                rel="no-opener no-referrer"
+                aria-label="Иконка твиттера">
+                <svg class="social-list__icon" width="20" height="20">
+                  <use href="./images/icons.svg#twitter"></use></svg>
+            </a>
+            </li>
+            <li class="social-list__item">
+              <a
+                class="social-list__link social-list__link--footer"
+                href=""
+                target="_blank"
+                rel="no-opener no-referrer"
+                aria-label="Иконка фейсбук">
+                <svg class="social-list__icon" width="20" height="20">
+                  <use href="./images/icons.svg#facebook"></use></svg>
+            </a>
+            </li>
+            <li class="social-list__item">
+              <a
+                class="social-list__link social-list__link--footer"
+                href=""
+                target="_blank"
+                rel="no-opener no-referrer"
+                aria-label="Иконка линкидин">
+                <svg class="social-list__icon" width="20" height="20">
+                  <use href="./images/icons.svg#linkedin"></use></svg>
+                </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-form">
+          <h3 class="footer-title main-footer__footer-title">Подпишитесь на рассылку</h3>
+          <form class="form-subscription" name="form-subscription">
+            <input class="form-subscription__email" type="email" name="email" placeholder="E-mail" required/>
+          <button  class="form-subscription__btn" type="submit">Подписаться
+            <svg class="form-subscription__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+      </form>
+    </div>
+      </div>
+    </footer>
+  </body>
+</html>

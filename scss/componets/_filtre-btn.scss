@@ -1,0 +1,35 @@
+.progect-filtre {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.progect__progect-filtre {
+  margin-bottom: 50px;
+}
+
+.progect-filtre__btn {
+  padding: 6px 22px;
+  font-family: inherit;
+  background-color: #f5f4fa;
+  border: transparent;
+  border-radius: 4px;
+  color: var(--brand-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+
+  transition: color var(--anim), background-color var(--anim), box-shadow var(--anim);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--accent-color);
+    color: var(--hero-title-color);
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

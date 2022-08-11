@@ -1,0 +1,40 @@
+.aside {
+  @extend %section;
+  padding-bottom: 0;
+}
+
+.aside-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  &__item {
+    min-width: 270px;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--brg-color-fon);
+    border-radius: 4px;
+  }
+
+  &__title {
+    color: var(--brand-color);
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+  }
+}
