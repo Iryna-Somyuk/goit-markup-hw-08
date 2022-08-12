@@ -19,6 +19,7 @@
   </head>
 
   <body data-page>
+    <!--
     <header class="page-header">
       <div class="container header">
         <nav class="nav-header">
@@ -51,16 +52,17 @@
       </div>
     </header>
     <main class="main">
-
+!-->
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">
-            Эффективные решения<br />
+            Эффективные решения
             для вашего бизнеса
           </h1>
           <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
+    
 
       <section class="aside">
         <div class="container">
@@ -120,20 +122,25 @@
           <h2 class="section-title about__section-title">Чем мы занимаемся</h2>
           <ul class="about-list">
             <li class="about-list__img">
-              <img src="./images/box1.jpg" 
+              <img 
+              srcset="./images/about/about_img_1@1x.jpg 1x, ./images/about/about_img_1@2x.jpg 2x"
+              src="./images/about/box1.jpg" 
                 alt="Разработка веб-страницы" 
                 width="370" 
                 height="294"/><h3 class="about-list__label">Десктопные приложения</h3>
             </li>
             <li class="about-list__img">
               <img
-                src="./images/box2.jpg"
+              srcset="./images/about/about_img_2@1x.jpg 1x, ./images/about/about_img_2@2x.jpg 2x" 
+                src="./images/about/box2.jpg"
                 alt="Тестирование веб-страницы"
                 width="370"
                 height="294"/><h3 class="about-list__label">Мобильные приложения</h3>
             </li>
             <li class="about-list__img">
-              <img src="./images/box3.jpg"
+              <img 
+              srcset="./images/about/about_img_3@1x.jpg 1x, ./images/about/about_img_3@2x.jpg 2x"
+              src="./images/about/box3.jpg"
                 alt="Работа з палитрой" 
                 width="370" 
                 height="294"/><h3 class="about-list__label">Дизайнерские решения</h3>
@@ -141,7 +148,7 @@
           </ul>
         </div>
       </section>
-
+<!--
       <section class="team">
         <div class="container">
           <h2 class="section-title team__section-title">Наша команда</h2>
@@ -149,7 +156,7 @@
             <li class="team-list__item">
               <img
                 class="team-list__photo"
-                src="./images/imgid.jpg"
+                src="./images/team/imgid.jpg"
                 alt="Фото Игоря Демьяненка"
                 width="270"
                 height="260"/>
@@ -203,7 +210,7 @@
             <li class="team-list__item">
               <img
                 class="team-list__photo"
-                src="./images/imgor.jpg"
+                src="./images/team/imgor.jpg"
                 alt="Фото Ольги Репиной"
                 width="270"
                 height="260"/>
@@ -257,7 +264,7 @@
             <li class="team-list__item">
               <img
                 class="team-list__photo"
-                src="./images/imgnt.jpg"
+                src="./images/team/imgnt.jpg"
                 alt="Фото Николая Тарасова"
                 width="270"
                 height="260"/>
@@ -311,7 +318,7 @@
             <li class="team-list__item">
               <img
                 class="team-list__photo"
-                src="./images/imgme.jpg"
+                src="./images/team/imgme.jpg"
                 alt="Фото Михаила Ермакова"
                 width="270"
                 height="260"/>
@@ -365,9 +372,9 @@
           </ul>
         </div>
       </section>
-
+!-->
       <section class="clients">
-        <div class="conteiner">
+        <div class="container">
           <h2 class="section-title clients__section-title">Постоянные клиенты</h2>
           <ul class="clients-list">
             <li class="clients-list__item">
@@ -433,6 +440,7 @@
           </ul>
         </div>
       </section>
+      <!--
     </main>
 
     <footer class="page-footer">
@@ -564,5 +572,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    !-->
   </body>
 </html>

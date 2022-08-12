@@ -2,21 +2,28 @@
   @extend %section;
 
   &__section-title {
+
+    margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px){
     margin-bottom: 50px;
   }
+}
 }
 
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 30px;
 
+  
   &__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+   
     height: 92px;
     background-color: transparent;
     border: 1px solid #afb1b8;
@@ -24,6 +31,21 @@
     color: var(--socials-icon-color);
 
     transition: border var(--anim), color var(--anim);
+ 
+    --items: 2;
+    flex-basis: calc((100% - 30px * (var(--items) - 1)) / var(--items));
+    width: 210px;
+
+    @media  screen and (min-width: 768px) {
+      --items: 3;
+    flex-basis: calc((100% - 30px * (var(--items) - 1)) / var(--items));  
+    width: 226px;
+    }
+    @media  screen and (min-width: 1200px) {  
+      --items: 6;
+    flex-basis: calc((100% - 30px * (var(--items) - 1)) / var(--items));
+    width: 170px;
+      }
 
     &:hover,
     &:focus {

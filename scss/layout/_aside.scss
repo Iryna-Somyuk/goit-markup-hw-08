@@ -1,15 +1,30 @@
 .aside {
-  @extend %section;
-  padding-bottom: 0;
-}
+    @extend %section;
+  }
+  
 
 .aside-list {
+
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
 
   &__item {
-    min-width: 270px;
+
+    --items: 1;
+    flex-basis: calc((100% - 30px * (var(--items) - 1)) / var(--items));
+    max-width: 450px;
+
+    @media  screen and (min-width: 768px) {
+      --items: 2;
+      flex-basis: calc((100% - 30px * (var(--items) - 1)) / var(--items));
+      max-width: 354px;
+    }
+    @media  screen and (min-width: 1200px) {
+      --items: 4;
+      flex-basis: calc((100% - 30px * (var(--items) - 1)) / var(--items));
+      max-width: 270px;
+    }
   }
 
   &__icon {
@@ -29,6 +44,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+
+    @media screen and (min-width: 480px){
+      text-align: center;
+    }
   }
 
   &__text {

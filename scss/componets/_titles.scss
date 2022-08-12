@@ -1,9 +1,13 @@
 .section-title {
-  font-size: 36px;
-  line-height: calc(42 / 36);
+  font-size: 28px;
+  line-height: calc(28 / 33);
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--brand-color);
+
+  @media  screen and (min-width: 1200px) {
+  font-size: 36px;
+  }
 }
 .footer-title {
   font-size: 14px;

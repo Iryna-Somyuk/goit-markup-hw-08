@@ -4,23 +4,67 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4) 100%, #2f303a),
-    url('../images/imagesfon/imgfon.jpg');
+  
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: var(--brg-color);
 
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4) 100%, #2f303a),
+    url('../images/imagesfon/hero_img@1x_sm.jpg');
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4) 100%, #2f303a),
+    url('../images/imagesfon/hero_img@2x_sm.jpg');
+  }
+
+    @media  screen and (min-width: 768px) {
+      background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4) 100%, #2f303a),
+      url('../images/imagesfon/hero_img@1x_md.jpg');
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4) 100%, #2f303a),
+        url('../images/imagesfon/hero_img@2x_md.jpg');
+      }
+      }
+
+    @media  screen and (min-width: 1200px) {
+      background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4) 100%, #2f303a),
+      url('../images/imagesfon/hero_img@1x_lg.jpg');
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4) 100%, #2f303a),
+        url('../images/imagesfon/hero_img@2x_lg.jpg');
+      }
+      }
+
   &__title {
     margin-bottom: 30px;
     color: var(--hero-title-color);
-    font-size: 44px;
-    line-height: calc(60 / 44);
+    font-size: 26px;
+    line-height: calc(42/ 26);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
+    display: block;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
     animation: title-fly 600ms ease-in-out 500ms;
+
+    @media  screen and (max-width: 1199px) {
+      max-width: 360px;
+    }
+
+    @media  screen and (min-width: 1200px) {
+      width: 696px;
+    font-size: 44px;
+  }
   }
   &__btn {
     font-family: inherit;
