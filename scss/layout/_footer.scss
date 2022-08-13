@@ -3,17 +3,45 @@
     background-color: var(--footer-brg-color);
 }
 .main-footer {
+   
+
+    @media  screen and (min-width: 480px) { 
     display: flex;
-    align-items: baseline; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 60px;
+
+}
+    @media  screen and (min-width: 768px) { 
+
+    align-items: baseline;
+    justify-content: space-around;
+   
+    
+}
+@media  screen and (min-width: 1200px) { 
+    display: flex;
+    align-items: baseline;
+    gap: 0px;
+    justify-content: center;
+    text-align: left;
+ }
 
     &__footer-social {
-    margin-right: 93px;
+
+        @media  screen and (min-width: 1200px) { 
+    margin-right: 93px;}
 }
     &__footer-address {
-    margin-right: 70px;
+
+        @media  screen and (min-width: 1200px) { 
+    margin-right: 70px;}
 }
 
     &__footer-title {
+
     margin-bottom: 20px;
 }
 
@@ -26,6 +54,8 @@
     color: var(--accent-color);
 }
 }
+
+
 
 .footer-address__all {
     margin-bottom: 9px;

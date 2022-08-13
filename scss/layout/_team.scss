@@ -4,22 +4,42 @@
   background-color: var(--brg-color-fon);
 
   &__section-title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px){
+      margin-bottom: 50px;
+    }
   }
 }
 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 30px;
 
   &__item {
-    min-width: 270px;
-
+   
     background-color: var(--hero-title-color);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
+
+      --items: 1;
+      flex-basis: calc((100% - 30px * (var(--items) - 1)) / var(--items));
+      max-width: 450px;
+  
+      @media  screen and (min-width: 768px) {
+        --items: 2;
+      flex-basis: calc((100% - 30px * (var(--items) - 1)) / var(--items));  
+      max-width: 354px;
+      }
+      @media  screen and (min-width: 1200px) {  
+        --items: 4;
+      flex-basis: calc((100% - 30px * (var(--items) - 1)) / var(--items));
+      max-width: 270px;
+        }
+
   }
 
   &__wrapper {

@@ -1,17 +1,29 @@
 .form-subscription {
+display: block;
+
+align-items: center;
+
+
+
+  @media  screen and (min-width: 1200px) { 
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
   gap: 12px;
+}
 
   &__email {
     padding: 15px;
-    width: 358px;
+    width: 450px;
     height: 50px;
     color: var(--hero-title-color);
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
+    margin-bottom: 20px;
+
+    @media  screen and (min-width: 1200px) { 
+    width: 358px;
+    margin: 0;
+  }
 
     &:not(:placeholder-shown):required:valid {
       border-color: var(--accent-color);
@@ -42,6 +54,7 @@
     border: none;
 
     padding: 10px 29px;
+    margin: 0 auto;
     min-width: 200px;
     transition: box-shadow var(--anim);
 
