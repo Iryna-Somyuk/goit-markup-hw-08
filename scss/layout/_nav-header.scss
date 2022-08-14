@@ -2,7 +2,7 @@
 
   display: flex;
   align-items: center;
-
+ 
  
 
   &__list {
@@ -11,8 +11,13 @@
       margin-left: auto;
       align-items: center;
       gap: 50px;
-    
-}
+
+      @media screen and (min-width: 768px) {
+        margin-right: 84px;
+      }
+    }
+
+
 
   &__link {
     display: none;
@@ -56,4 +61,5 @@
       border-radius: 2px;
     }
   }
+
 }

@@ -26,16 +26,13 @@
       <div class="container header">
         <nav class="nav-header">
           <a class="logo header__logo" href="./index.html" lang="en"><span class="slogan header__slogan">Web</span>Studio</a>
-          <button class="menu-btn" type="button">
-            <svg class="menu-btn__icon" width="40" height="40">
-              <use href="./images/icons.svg#menu_btn"></use></svg>
-          </button>
           <ul class="nav-header__list">
             <li class="nav-header__item"><a class="nav-header__link nav-header__link--current" href="./index.html">Студия</a></li>
             <li class="nav-header__item"><a class="nav-header__link" href="./portfolio.html">Портфолио</a></li>
             <li class="nav-header__item"><a class="nav-header__link" href="/Контакты">Контакты</a></li>
           </ul>
         </nav>
+       
         <ul class="header-list">
           <li class="header-list__item">
             <a
@@ -55,6 +52,11 @@
               </a>
           </li>
         </ul>
+        
+        <button class="menu-btn" type="button" data-menu-open>
+          <svg class="menu-btn__icon" width="40" height="40">
+            <use href="./images/icons.svg#menu_btn"></use></svg>
+        </button>
       </div>
     </header>
     
@@ -610,7 +612,7 @@
     </div>
       </div>
     </footer>
-<!--
+
     <div class="backdrop backdrop--is-hidden" data-modal>
       <div class="modal">
         <button class="modal__btn" data-modal-close>
@@ -661,7 +663,56 @@
         </form>
       </div>
     </div>
+
+    <div class="menu-overlay is-open" data-menu>
+      <div class="menu-container">
+        <button class="menu-container__btn" type="button" data-menu-close>
+          <svg class="menu-containet __icon" width="40" height="40">
+            <use href="./images/icons.svg#close_menu_btn"></use>
+          </svg>
+        </button>
+        <ul class="nav-mobile__list">
+          <li class="nav-mobile__item"><a class="nav-mobile__link nav-mobile__link--current" href="./index.html">Студия</a></li>
+          <li class="nav-mobile__item"><a class="nav-mobile__link" href="./portfolio.html">Портфолио</a></li>
+          <li class="nav-mobile__item"><a class="nav-mobile__link" href="/Контакты">Контакты</a></li>
+        </ul>
+
+        <ul class="mobile-list">
+          <li class="mobile-list__item">
+            <a class="mobile-list__link" 
+            href="tel:+380961111111">+38 096 111 11 11
+              </a>
+          </li>
+          <li class="mobile-list__item">
+            <a class="mobile-list__link"
+              href="mailto:info@devstudio.com">info@devstudio.com
+            </a>
+          </li>
+        </ul>
+      
+        <ul class="mobile-socilas-list">
+          <li class="mobile-socilas-list__item">
+            <a class="mobile-socilas-list__link" href="" target="_blank"
+            rel="no-opener no-referrer">Instagram</a>
+          </li>
+          <li class="mobile-socilas-list__item">
+            <a class="mobile-socilas-list__link" href="" target="_blank"
+            rel="no-opener no-referrer">Twitter</a>
+          </li>
+          <li class="mobile-socilas-list__item">
+            <a class="mobile-socilas-list__link" href="" target="_blank"
+            rel="no-opener no-referrer">Facebook</a>
+          </li>
+          <li class="mobile-socilas-list__item">
+            <a class="mobile-socilas-list__link" href="" target="_blank"
+            rel="no-opener no-referrer">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
-    !-->
+    <script src="./js/menu.js"></script>
+  
   </body>
 </html>
