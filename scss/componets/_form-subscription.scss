@@ -1,14 +1,11 @@
 .form-subscription {
-display: block;
+  display: block;
+  align-items: center;
 
-align-items: center;
-
-
-
-  @media  screen and (min-width: 1200px) { 
-  display: inline-flex;
-  gap: 12px;
-}
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    gap: 12px;
+  }
 
   &__email {
     padding: 15px;
@@ -20,10 +17,10 @@ align-items: center;
     border-radius: 4px;
     margin-bottom: 20px;
 
-    @media  screen and (min-width: 1200px) { 
-    width: 358px;
-    margin: 0;
-  }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      margin: 0;
+    }
 
     &:not(:placeholder-shown):required:valid {
       border-color: var(--accent-color);

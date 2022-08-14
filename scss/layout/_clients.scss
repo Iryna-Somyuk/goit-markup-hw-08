@@ -2,13 +2,12 @@
   @extend %section;
 
   &__section-title {
-
     margin-bottom: 30px;
 
-  @media screen and (min-width: 1200px){
-    margin-bottom: 50px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
   }
-}
 }
 
 .clients-list {
@@ -18,12 +17,11 @@
   justify-content: center;
   gap: 30px;
 
-  
   &__link {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
     height: 92px;
     background-color: transparent;
     border: 1px solid #afb1b8;
@@ -31,21 +29,21 @@
     color: var(--socials-icon-color);
 
     transition: border var(--anim), color var(--anim);
- 
+
     --items: 2;
     flex-basis: calc((100% - 30px * (var(--items) - 1)) / var(--items));
     width: 210px;
 
-    @media  screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
       --items: 3;
-    flex-basis: calc((100% - 30px * (var(--items) - 1)) / var(--items));  
-    width: 226px;
+      flex-basis: calc((100% - 30px * (var(--items) - 1)) / var(--items));
+      width: 226px;
     }
-    @media  screen and (min-width: 1200px) {  
+    @media screen and (min-width: 1200px) {
       --items: 6;
-    flex-basis: calc((100% - 30px * (var(--items) - 1)) / var(--items));
-    width: 170px;
-      }
+      flex-basis: calc((100% - 30px * (var(--items) - 1)) / var(--items));
+      width: 170px;
+    }
 
     &:hover,
     &:focus {
