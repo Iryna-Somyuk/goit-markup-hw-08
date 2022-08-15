@@ -3,14 +3,14 @@
   background-color: var(--footer-brg-color);
 }
 .main-footer {
-  @media screen and (min-width: 480px) {
+  
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
     gap: 60px;
-  }
+  
   @media screen and (min-width: 768px) {
     align-items: baseline;
     justify-content: space-around;

@@ -1,5 +1,5 @@
 .hero {
-  padding: 200px 0;
+  padding: 118px 0;
   text-align: center;
   max-width: 1600px;
   margin-left: auto;
@@ -33,6 +33,7 @@
       background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4) 100%, #2f303a),
         url('../images/imagesfon/hero_img@2x_lg.jpg');
     }
+    padding: 200px 0;
   }
 
   &__title {

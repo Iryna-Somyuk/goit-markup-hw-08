@@ -57,7 +57,7 @@
 
       align-items: center;
       justify-content: center;
-      gap: 10px;
+      gap: 8px;
 
       color: var(--text-color);
       font-weight: 500;
@@ -72,6 +72,7 @@
     @media screen and (min-width: 1200px) {
       font-size: 14px;
       line-height: calc(16 / 14);
+      gap: 10px;
     }
     &:hover,
     &:focus {
@@ -81,5 +82,16 @@
 
   &__icon {
     fill: currentColor;
+
+  }
+}
+.icon-desktop {
+  @media screen and (max-width: 1199px){
+  display: none;
+}
+}
+.icon-tablet {
+  @media screen and (min-width: 1200px){
+    display: none;
   }
 }

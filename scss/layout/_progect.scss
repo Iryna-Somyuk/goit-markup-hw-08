@@ -5,16 +5,20 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+ 
 
   &__item {
     --items: 1;
     flex-basis: calc((100% - 30px * (var(--items) - 1)) / var(--items));
     max-width: 450px;
+  
 
     @media screen and (min-width: 768px) {
       --items: 2;
       flex-basis: calc((100% - 30px * (var(--items) - 1)) / var(--items));
       max-width: 354px;
+      display: flex;
+      flex-direction: column;
     }
 
     @media screen and (min-width: 1200px) {
@@ -41,6 +45,7 @@
     padding: 20px 24px;
     border: 1px solid #eeeeee;
     border-top: none;
+    flex-grow: 1;
   }
 
   &__title {

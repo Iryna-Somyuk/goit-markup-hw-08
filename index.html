@@ -39,14 +39,18 @@
               class="header-list__link"
               href="mailto:info@devstudio.com"
               aria-label="Иконка конверта">
-              <svg class="header-list__icon" width="16" height="12">
-                <use href="./images/icons.svg#envelope"></use></svg>info@devstudio.com
+              <svg class="header-list__icon icon-tablet" width="14" height="10">
+                <use href="./images/icons.svg#envelope_tablet"></use></svg>
+                <svg class="header-list__icon icon-desktop" width="16" height="12">
+                  <use href="./images/icons.svg#envelope"></use></svg>info@devstudio.com
             </a>
           </li>
           <li class="header-list__item">
             <a class="header-list__link" href="tel:+380961111111" aria-label="Иконка смартфона">
-              <svg class="header-list__icon" width="10" height="16">
-                <use href="./images/icons.svg#smartphone"></use></svg>+38 096 111 11 11
+              <svg class="header-list__icon icon-tablet" width="10" height="14">
+                <use href="./images/icons.svg#smartphone_tablet"></use></svg>
+                <svg class="header-list__icon icon-desktop" width="10" height="16">
+                  <use href="./images/icons.svg#smartphone"></use></svg>+38 096 111 11 11
             </a>
           </li>
         </ul>
@@ -165,9 +169,7 @@
                   ./images/team/img_id_900.jpg 900w"
                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
                 src="./images/team/imgid.jpg"
-                alt="Фото Игоря Демьяненка"
-                width=""
-                height=""/>
+                alt="Фото Игоря Демьяненка"/>
               <div class="team-list__wrapper">
                 <h3 class="team-list__name">Игор Демьяненко</h3>
                 <p class="team-list__text" lang="en">Product Designer</p>
@@ -228,9 +230,7 @@
                   ./images/team/img_or_900.jpg 900w"
                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
                 src="./images/team/imgor.jpg"
-                alt="Фото Ольги Репиной"
-                width=""
-                height=""/>
+                alt="Фото Ольги Репиной"/>
               <div class="team-list__wrapper">
                 <h3 class="team-list__name">Ольга Репина</h3>
                 <p class="team-list__text" lang="en">Frontend Developer</p>
@@ -290,9 +290,7 @@
                   ./images/team/img_nt_900.jpg 900w"
                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
                 src="./images/team/imgnt.jpg"
-                alt="Фото Николая Тарасова"
-                width=""
-                height=""/>
+                alt="Фото Николая Тарасова"/>
               <div class="team-list__wrapper">
                 <h3 class="team-list__name">Николай Тарасов</h3>
                 <p class="team-list__text" lang="en">Marketing</p>
@@ -352,9 +350,7 @@
                   ./images/team/img_me_900.jpg 900w"
                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
                 src="./images/team/imgme.jpg"
-                alt="Фото Михаила Ермакова"
-                width=""
-                height=""/>
+                alt="Фото Михаила Ермакова"/>
               <div class="team-list__wrapper">
                 <h3 class="team-list__name">Михаил Ермаков</h3>
                 <p class="team-list__text" lang="en">UI Designer</p>
@@ -632,7 +628,7 @@
         </form>
       </div>
     </div>
-    <div class="menu-overlay is-open" data-menu>
+    <div class="menu-overlay" data-menu>
       <div class="menu-container">
         <button class="menu-container__btn" type="button" data-menu-close>
           <svg class="menu-containet __icon" width="40" height="40">
